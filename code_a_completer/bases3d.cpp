@@ -6,6 +6,8 @@
 Point3D Point3D::operator +(const Vecteur3D & v) const {
 	Point3D res;
 
+	res = v.X*this.X + v.Y*this.Y + v.Z*this->Z;
+
 // A FAIRE
 
 	return res;
