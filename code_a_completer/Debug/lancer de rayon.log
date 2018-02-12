@@ -1,0 +1,37 @@
+﻿  sphere.cpp
+d:\documents\2017-2018\second semestre\lancer de rayons\lancerderayons\code_a_completer\objet3D.hpp(28): warning C4305: '=' : troncation de 'double' à 'float'
+  rayon.cpp
+d:\documents\2017-2018\second semestre\lancer de rayons\lancerderayons\code_a_completer\objet3D.hpp(28): warning C4305: '=' : troncation de 'double' à 'float'
+  plan.cpp
+d:\documents\2017-2018\second semestre\lancer de rayons\lancerderayons\code_a_completer\objet3D.hpp(28): warning C4305: '=' : troncation de 'double' à 'float'
+  pixelmap.cpp
+pixelmap.cpp(14): warning C4244: 'argument' : conversion de 'double' en 'float', perte possible de données
+pixelmap.cpp(15): warning C4244: 'argument' : conversion de 'double' en 'float', perte possible de données
+pixelmap.cpp(16): warning C4244: 'argument' : conversion de 'double' en 'float', perte possible de données
+  main.cpp
+d:\documents\2017-2018\second semestre\lancer de rayons\lancerderayons\code_a_completer\objet3D.hpp(28): warning C4305: '=' : troncation de 'double' à 'float'
+main.cpp(25): warning C4305: 'argument' : troncation de 'double' à 'float'
+main.cpp(29): warning C4305: 'argument' : troncation de 'double' à 'float'
+main.cpp(39): warning C4305: 'argument' : troncation de 'double' à 'float'
+main.cpp(44): warning C4305: 'argument' : troncation de 'double' à 'float'
+main.cpp(45): warning C4305: 'argument' : troncation de 'double' à 'float'
+main.cpp(46): warning C4305: 'argument' : troncation de 'double' à 'float'
+main.cpp(59): warning C4305: 'argument' : troncation de 'double' à 'float'
+main.cpp(61): warning C4305: 'argument' : troncation de 'double' à 'float'
+main.cpp(62): warning C4305: 'argument' : troncation de 'double' à 'float'
+main.cpp(78): warning C4305: 'argument' : troncation de 'double' à 'float'
+main.cpp(79): warning C4305: 'argument' : troncation de 'double' à 'float'
+main.cpp(88): warning C4305: 'argument' : troncation de 'double' à 'float'
+main.cpp(89): warning C4305: 'argument' : troncation de 'double' à 'float'
+  lumiere.cpp
+d:\documents\2017-2018\second semestre\lancer de rayons\lancerderayons\code_a_completer\objet3D.hpp(28): warning C4305: '=' : troncation de 'double' à 'float'
+  intersection.cpp
+  couleurRVB.cpp
+  camera.cpp
+  bitmap.cpp
+bitmap.cpp(53): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.16299.0\ucrt\stdio.h(207): note: voir la déclaration de 'fopen'
+  bases3d.cpp
+bases3d.cpp(32): warning C4244: 'return' : conversion de 'double' en 'float', perte possible de données
+  Génération de code en cours...
+  lancer de rayon.vcxproj -> D:\Documents\2017-2018\second semestre\lancer de rayons\LancerDeRayons\code_a_completer\Debug\lancer de rayon.exe
