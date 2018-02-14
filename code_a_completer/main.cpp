@@ -8,6 +8,8 @@
 #include "lumiere.h"
 #include "rayon.hpp"
 #include "objet3D.hpp"
+#include <iostream>
+using namespace std;
 
 int main(void) {
 	// Les lumieres
@@ -93,5 +95,12 @@ int main(void) {
 	pixmap.Transferer(bitmap);
 	bitmap.Enregistrer("image.bmp");
 
+	Vecteur3D vect = Vecteur3D(3.0,-4.0,0.0);
+	Vecteur3D v = Vecteur3D(0.0,4.0,0.0);
+	Vecteur3D res = Vecteur3D();
+	res = vect.Reflechir(v);
+    cout << res.X() <<endl;
+    cout << res.Y() <<endl;
+    cout << res.Z() <<endl;
 	return 0;
 }

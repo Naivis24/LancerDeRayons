@@ -106,7 +106,8 @@ Vecteur3D Vecteur3D::Reflechir(const Vecteur3D & n) const { //TODO
 Vecteur3D Vecteur3D::Refracter(const Vecteur3D & norm, float m1, float m2) const { // TODO
 	Vecteur3D res;
 
-	// A FAIRE
+
+
 
 	return res;
 }
