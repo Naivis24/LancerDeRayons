@@ -6,9 +6,9 @@
 Point3D Point3D::operator +(const Vecteur3D & v) const {
 	Point3D res;
 
-	res.X(this.X() + v.X());
-	res.Y(this.Y() + v.Y());
-	res.Z(this.Z() + v.Z());
+	res.X(X() + v.X());
+	res.Y(Y() + v.Y());
+	res.Z(Z() + v.Z());
 
 	return res;
 }
@@ -16,9 +16,9 @@ Point3D Point3D::operator +(const Vecteur3D & v) const {
 Point3D Point3D::operator -(const Vecteur3D & v) const {
 	Point3D res;
 
-	res.X(this.X() - v.X());
-	res.Y(this.Y() - v.Y());
-	res.Z(this.Z() - v.Z());
+	res.X(X() - v.X());
+	res.Y(Y() - v.Y());
+	res.Z(Z() - v.Z());
 
 	return res;
 }
@@ -46,9 +46,9 @@ void Vecteur3D::Normaliser() {
 Vecteur3D Vecteur3D::operator +(const Vecteur3D & v) const {
 	Vecteur3D res;
 
-	res.X(this.X() + v.X());
-	res.Y(this.Y() + v.Y());
-	res.Z(this.Z() + v.Z());
+	res.X(X() + v.X());
+	res.Y(Y() + v.Y());
+	res.Z(Z() + v.Z());
 
 	return res;
 }
@@ -56,9 +56,9 @@ Vecteur3D Vecteur3D::operator +(const Vecteur3D & v) const {
 Vecteur3D Vecteur3D::operator -(const Vecteur3D & v) const {
 	Vecteur3D res;
 
-	res.X(this.X() - v.X());
-	res.Y(this.Y() - v.Y());
-	res.Z(this.Z() - v.Z());
+	res.X(X() - v.X());
+	res.Y(Y() - v.Y());
+	res.Z(Z() - v.Z());
 
 	return res;
 }
@@ -66,9 +66,9 @@ Vecteur3D Vecteur3D::operator -(const Vecteur3D & v) const {
 Vecteur3D Vecteur3D::operator -() const {
 	Vecteur3D res;
 
-	res.X(-(this.X()));
-	res.Y(-(this.Y()));
-	res.Z(-(this.Z()));
+	res.X(-(X()));
+	res.Y(-(Y()));
+	res.Z(-(Z()));
 
 	return res;
 }
@@ -76,9 +76,9 @@ Vecteur3D Vecteur3D::operator -() const {
 Vecteur3D Vecteur3D::operator *(float m) const {
 	Vecteur3D res;
 
-	res.X(m*(this.X());
-	res.Y(m*(this.Y()));
-	res.Z(m*(this.Z()));
+	res.X(m*(X()));
+	res.Y(m*(Y()));
+	res.Z(m*(Z()));
 
 	return res;
 }
@@ -90,7 +90,9 @@ float Vecteur3D::operator *(const Vecteur3D & v) const {
 Vecteur3D Vecteur3D::Cross(const Vecteur3D & v) const {
 	Vecteur3D res;
 
-	// A FAIRE
+	res.X(Y()*v.Z() - Z()*v.Y());
+	res.Y(Z()*v.X() - X()*v.Z());
+	res.Z(X()*v.Y() - Y()*v.X());
 
 	return res;
 }
