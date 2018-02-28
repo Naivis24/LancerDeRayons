@@ -1,0 +1,120 @@
+# depslib dependency file v1.0
+1519817530 source:c:\users\rebierre quentin\desktop\lancer de rayons\lancerderayons\code_a_completer\bases3d.cpp
+	<math.h>
+	"bases3d.hpp"
+
+1297787408 c:\users\rebierre quentin\desktop\lancer de rayons\lancerderayons\code_a_completer\bases3d.hpp
+	<stdlib.h>
+	"liste.hpp"
+
+1297783980 c:\users\rebierre quentin\desktop\lancer de rayons\lancerderayons\code_a_completer\liste.hpp
+
+1297843262 source:c:\users\rebierre quentin\desktop\lancer de rayons\lancerderayons\code_a_completer\bitmap.cpp
+	<stdio.h>
+	<stdlib.h>
+	"bitmap.hpp"
+
+1297843218 c:\users\rebierre quentin\desktop\lancer de rayons\lancerderayons\code_a_completer\bitmap.hpp
+	<stdlib.h>
+	"const.hpp"
+	"bases3d.hpp"
+	"couleurRVB.hpp"
+
+1297783980 c:\users\rebierre quentin\desktop\lancer de rayons\lancerderayons\code_a_completer\const.hpp
+
+1297784464 c:\users\rebierre quentin\desktop\lancer de rayons\lancerderayons\code_a_completer\couleurrvb.hpp
+
+1297846424 source:c:\users\rebierre quentin\desktop\lancer de rayons\lancerderayons\code_a_completer\camera.cpp
+	"camera.hpp"
+	"bases3d.hpp"
+	"pixelmap.hpp"
+	"rayon.hpp"
+	<stdio.h>
+
+1297843868 c:\users\rebierre quentin\desktop\lancer de rayons\lancerderayons\code_a_completer\camera.hpp
+	"const.hpp"
+	"bases3d.hpp"
+	"pixelmap.hpp"
+
+1297784558 c:\users\rebierre quentin\desktop\lancer de rayons\lancerderayons\code_a_completer\pixelmap.hpp
+	"bases3d.hpp"
+	"bitmap.hpp"
+
+1297846484 c:\users\rebierre quentin\desktop\lancer de rayons\lancerderayons\code_a_completer\rayon.hpp
+	"bases3d.hpp"
+	"intersection.hpp"
+	"liste.hpp"
+
+1297846484 c:\users\rebierre quentin\desktop\lancer de rayons\lancerderayons\code_a_completer\intersection.hpp
+	"bases3d.hpp"
+
+1297784464 source:c:\users\rebierre quentin\desktop\lancer de rayons\lancerderayons\code_a_completer\couleurrvb.cpp
+	"couleurRVB.hpp"
+
+1297846484 source:c:\users\rebierre quentin\desktop\lancer de rayons\lancerderayons\code_a_completer\intersection.cpp
+	"intersection.hpp"
+	"const.hpp"
+
+1518614607 source:c:\users\rebierre quentin\desktop\lancer de rayons\lancerderayons\code_a_completer\lumiere.cpp
+	<math.h>
+	"lumiere.h"
+	"couleurRVB.hpp"
+	"objet3D.hpp"
+
+1297788168 c:\users\rebierre quentin\desktop\lancer de rayons\lancerderayons\code_a_completer\lumiere.h
+	"couleurRVB.hpp"
+	"rayon.hpp"
+	"intersection.hpp"
+
+1297846572 c:\users\rebierre quentin\desktop\lancer de rayons\lancerderayons\code_a_completer\objet3d.hpp
+	"couleurRVB.hpp"
+	"rayon.hpp"
+	"intersection.hpp"
+
+1519819421 source:c:\users\rebierre quentin\desktop\lancer de rayons\lancerderayons\code_a_completer\main.cpp
+	<stdio.h>
+	"bases3d.hpp"
+	"plan.hpp"
+	"sphere.hpp"
+	"camera.hpp"
+	"pixelmap.hpp"
+	"intersection.hpp"
+	"lumiere.h"
+	"rayon.hpp"
+	"objet3D.hpp"
+	<iostream>
+
+1297846484 c:\users\rebierre quentin\desktop\lancer de rayons\lancerderayons\code_a_completer\plan.hpp
+	"const.hpp"
+	"bases3d.hpp"
+	"objet3D.hpp"
+	"intersection.hpp"
+	"rayon.hpp"
+
+1297846664 c:\users\rebierre quentin\desktop\lancer de rayons\lancerderayons\code_a_completer\sphere.hpp
+	"const.hpp"
+	"bases3d.hpp"
+	"sphere.hpp"
+	"intersection.hpp"
+	"objet3D.hpp"
+
+1297784558 source:c:\users\rebierre quentin\desktop\lancer de rayons\lancerderayons\code_a_completer\pixelmap.cpp
+	<math.h>
+	"pixelmap.hpp"
+	"bases3d.hpp"
+	"bitmap.hpp"
+
+1297846484 source:c:\users\rebierre quentin\desktop\lancer de rayons\lancerderayons\code_a_completer\plan.cpp
+	<math.h>
+	"plan.hpp"
+	"bases3d.hpp"
+
+1297846692 source:c:\users\rebierre quentin\desktop\lancer de rayons\lancerderayons\code_a_completer\rayon.cpp
+	"rayon.hpp"
+	"objet3D.hpp"
+	"lumiere.h"
+
+1297846654 source:c:\users\rebierre quentin\desktop\lancer de rayons\lancerderayons\code_a_completer\sphere.cpp
+	<math.h>
+	"sphere.hpp"
+
