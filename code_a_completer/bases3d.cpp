@@ -1,5 +1,3 @@
-// ce Fichier entier en TODO ?
-
 #include <math.h>
 #include "bases3d.hpp"
 
