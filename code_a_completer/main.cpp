@@ -1,3 +1,4 @@
+#include <iostream>
 #include <stdio.h>
 #include "bases3d.hpp"
 #include "plan.hpp"
@@ -8,10 +9,11 @@
 #include "lumiere.h"
 #include "rayon.hpp"
 #include "objet3D.hpp"
-#include <iostream>
 using namespace std;
 
 int main(void) {
+
+    cout << "coucou" << endl;
 	// Les lumieres
 	Liste<Lumiere> liste_lumieres;
 	// Les objets
@@ -94,12 +96,11 @@ int main(void) {
 
 	pixmap.Transferer(bitmap);
 	bitmap.Enregistrer("image.bmp");
-    cout << "coucou" << endl;
+
     Vecteur3D rayonRef = Vecteur3D(4,1,1).Refracter(Vecteur3D(0,-2,-1),1,1.5);
     cout<< rayonRef.X()<<endl;
     cout<< rayonRef.Y()<<endl;
     cout<< rayonRef.Z()<<endl;
-    system("pause");
 
 
 	return 0;
