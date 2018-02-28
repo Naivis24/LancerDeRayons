@@ -13,7 +13,6 @@ using namespace std;
 
 int main(void) {
 
-    cout << "coucou" << endl;
 	// Les lumieres
 	Liste<Lumiere> liste_lumieres;
 	// Les objets

@@ -10,7 +10,33 @@ Vecteur3D Sphere::Normale(const Point3D & t) const {
 
 
 int Sphere::Intersection(const Rayon & r, C_Liste_Intersection & l) {
-	// A FAIRE
+	Point3D centre = this -> Centre();
+	float rayon = this -> SphereRayon();
+    Point3D origineRayon = r.Orig();
+    Vecteur3D d = r.Vect();
 
-	return 1;
+    float b = 2.0*((origineRayon-centre).operator*(d));
+	float c = (origineRayon-centre).operator*((origineRayon-centre))-(rayon*rayon);
+
+	float delta = b*b-4*c;
+
+	if(delta<0.0){
+        return 0;
+	}
+	else{
+        float Rdelta = sqrt((double) delta);
+        float t0 = 0.5*(-b-Rdelta);
+        float t1 = 0.5*(-b+Rdelta);
+        if(t0 >= 0.0){
+            float t = t0;
+
+            return 1;
+        }
+        if(t1 >= 0.0){
+            float t = t1;
+
+            return 1;
+        }
+	}
+	return 0;
 }
