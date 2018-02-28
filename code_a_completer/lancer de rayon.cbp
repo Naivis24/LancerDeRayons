@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="lancer de rayon" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug Win32">
+				<Option output="lancer de rayon" prefix_auto="1" extension_auto="1" />
+				<Option type="0" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-DWIN32" />
+					<Add option="-D_DEBUG" />
+					<Add option="-D_CONSOLE" />
+				</Compiler>
+			</Target>
+			<Target title="Debug x64">
+				<Option output="lancer de rayon" prefix_auto="1" extension_auto="1" />
+				<Option type="0" />
+				<Option compiler="gcc" />
+			</Target>
+			<Target title="Release x64">
+				<Option output="lancer de rayon" prefix_auto="1" extension_auto="1" />
+				<Option type="0" />
+				<Option compiler="gcc" />
+			</Target>
+			<Target title="Release Win32">
+				<Option output="lancer de rayon" prefix_auto="1" extension_auto="1" />
+				<Option type="0" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-DWIN32" />
+					<Add option="-DNDEBUG" />
+					<Add option="-D_CONSOLE" />
+				</Compiler>
+			</Target>
+		</Build>
+		<Unit filename="bases3d.cpp" />
+		<Unit filename="bases3d.hpp" />
+		<Unit filename="bitmap.cpp" />
+		<Unit filename="bitmap.hpp" />
+		<Unit filename="camera.cpp" />
+		<Unit filename="camera.hpp" />
+		<Unit filename="const.hpp" />
+		<Unit filename="couleurRVB.cpp" />
+		<Unit filename="couleurRVB.hpp" />
+		<Unit filename="intersection.cpp" />
+		<Unit filename="intersection.hpp" />
+		<Unit filename="liste.hpp" />
+		<Unit filename="lumiere.cpp" />
+		<Unit filename="lumiere.h" />
+		<Unit filename="main.cpp" />
+		<Unit filename="objet3D.hpp" />
+		<Unit filename="pixelmap.cpp" />
+		<Unit filename="pixelmap.hpp" />
+		<Unit filename="plan.cpp" />
+		<Unit filename="plan.hpp" />
+		<Unit filename="rayon.cpp" />
+		<Unit filename="rayon.hpp" />
+		<Unit filename="sphere.cpp" />
+		<Unit filename="sphere.hpp" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

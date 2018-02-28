@@ -106,8 +106,20 @@ Vecteur3D Vecteur3D::Reflechir(const Vecteur3D & n) const { //TODO
 Vecteur3D Vecteur3D::Refracter(const Vecteur3D & norm, float m1, float m2) const { // TODO
 	Vecteur3D res;
 
+    float r;
+    float cos1;
+    float cos2;
 
+	Vecteur3D rayon = *this;
+	Vecteur3D norme = norm;
 
+	rayon.Normaliser();
+    norme.Normaliser();
+
+    r = m1/m2;
+	cos1 = -norme.operator*(rayon);
+    cos2 = sqrt(1-(r*r)*(1-(cos1*cos1)));
+    res = (rayon).operator*(r)+norme.operator*(r*cos1-cos2);
 
 	return res;
 }
