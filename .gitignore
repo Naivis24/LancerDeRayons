@@ -1,5 +1,6 @@
 
 *.o
+<<<<<<< HEAD
 .vs/LancerDeRayons/v15/.suo
 .vs/LancerDeRayons/v15/Browse.VC.db
 *.opendb
@@ -27,3 +28,8 @@ code_a_completer/Debug/lancer de rayon.pdb
 code_a_completer/Debug/lancer de rayon.ilk
 code_a_completer/Debug/lancer de rayon.exe
 code_a_completer/Debug/bases3d.obj
+=======
+code_a_completer/cmake-build-debug/CMakeFiles/clion-log.txt
+*.xml
+code_a_completer/.idea/code_a_completer.iml
+>>>>>>> 2d32cf8f78f42a7986d9a119b1538e821a2d5a3e
