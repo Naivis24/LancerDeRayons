@@ -29,20 +29,12 @@ int Sphere::Intersection(const Rayon & r, C_Liste_Intersection & l) {
         float t1 = 0.5*(-b+Rdelta);
         if(t0 >= 0.0){
             float t = t0;
-<<<<<<< HEAD
-            l.Ajouter(Intersection3D(t, this, this->Milieu1()));
-=======
             l.Ajouter(Intersection3D(t,this,this -> Millieu1()));
->>>>>>> 2d32cf8f78f42a7986d9a119b1538e821a2d5a3e
             return 1;
         }
         if(t1 >= 0.0){
             float t = t1;
-<<<<<<< HEAD
-			l.Ajouter(Intersection3D(t, this, this->Milieu1()));
-=======
             l.Ajouter(Intersection3D(t,this,this -> Millieu1()));
->>>>>>> 2d32cf8f78f42a7986d9a119b1538e821a2d5a3e
             return 1;
         }
 	}
