@@ -12,7 +12,7 @@ void Camera::Haut(const Vecteur3D & h) {
 }
 
 void Camera::Calculer_image(Pixelmap & pm, Liste<Objet3D> & lo, Liste<Lumiere> & ll, int complexite) const {
-
-	// A FAIRE
-
+	for (int i = 0; i < pm.Hauteur()*pm.Largeur(); i++) {
+		pm.Map(i, RVB(0.2, 0.4, 0.9));
+	}
 }

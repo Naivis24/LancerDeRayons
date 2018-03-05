@@ -1,2 +1,29 @@
 
 *.o
+.vs/LancerDeRayons/v15/.suo
+.vs/LancerDeRayons/v15/Browse.VC.db
+*.opendb
+*.ipch
+*.json
+.vs/slnx.sqlite
+code_a_completer/Debug/bases3d.obj
+code_a_completer/Debug/bases3d.obj
+code_a_completer/Debug/image.bmp
+code_a_completer/Debug/lancer de rayon.ilk
+code_a_completer/Debug/lancer de rayon.pdb
+code_a_completer/Debug/lancer de rayon.tlog/CL.write.1.tlog
+code_a_completer/Debug/main.obj
+code_a_completer/Debug/bases3d.obj
+code_a_completer/Debug/lancer de rayon.exe
+code_a_completer/Debug/bases3d.obj
+*.obj
+code_a_completer/Debug/vc141.pdb
+code_a_completer/Debug/vc141.idb
+code_a_completer/Debug/main.obj
+code_a_completer/Debug/lancer de rayon.tlog/link.read.1.tlog
+code_a_completer/Debug/lancer de rayon.tlog/CL.write.1.tlog
+code_a_completer/Debug/lancer de rayon.tlog/CL.read.1.tlog
+code_a_completer/Debug/lancer de rayon.pdb
+code_a_completer/Debug/lancer de rayon.ilk
+code_a_completer/Debug/lancer de rayon.exe
+code_a_completer/Debug/bases3d.obj
