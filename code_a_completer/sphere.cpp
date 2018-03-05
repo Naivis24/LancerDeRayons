@@ -34,7 +34,7 @@ int Sphere::Intersection(const Rayon & r, C_Liste_Intersection & l) {
         }
         if(t1 >= 0.0){
             float t = t1;
-
+            l.Ajouter(Intersection3D(t,this,milieu1));
             return 1;
         }
 	}

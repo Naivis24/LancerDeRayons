@@ -1,2 +1,5 @@
 
 *.o
+code_a_completer/cmake-build-debug/CMakeFiles/clion-log.txt
+*.xml
+code_a_completer/.idea/code_a_completer.iml
