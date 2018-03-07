@@ -20,8 +20,7 @@ RVB Lumiere_Ponctuelle::Illumination(const Rayon & r, const Intersection3D & i, 
 	if(r.Intersections())
 
 	res = i.Objt()->Ambiante() * couleur;
-	
+
     return res;
 
 }
-
