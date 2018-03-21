@@ -55,9 +55,24 @@ RVB Rayon::Lancer(Liste<Objet3D> & lo, Liste<Lumiere> & ll, int recur) const {
 			reflect.Orig() = orgNouveauRayon;
 			reflect.Vect() = vect;
 
-			// la refraction
+			// les ombres
+			ll.Premier();
+			bool ombre = false;
+			while(ll.Courant() != ll.Dernier()){
+			    Lumiere_Ponctuelle* lp = dynamic_cast<Lumiere_Ponctuelle*>(ll.Courant());
+			    Rayon r = *this;
+			    RVB rvb = lp->Illumination(r, Intersect, orgNouveauRayon, lo);
+                if(rvb.B() == RVB(0,0,0).B() && rvb.R() == RVB(0,0,0).R() && rvb.V() == RVB(0,0,0).V()){
+                    ombre = true;
+                }
+                ll.Suivant();
+			}
 
-			return li.Courant()->Objt()->Couleur();
+            if(ombre == true){
+                return RVB(0,0,0);
+            }else{
+                return li.Courant()->Objt()->Couleur();
+            }
 		}
 	}
 	else {

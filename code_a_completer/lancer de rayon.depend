@@ -118,3 +118,123 @@
 	<math.h>
 	"sphere.hpp"
 
+1519822937 source:c:\users\thomas\documents\2017-2018\lancerderayons\code_a_completer\bases3d.cpp
+	<math.h>
+	"bases3d.hpp"
+
+1297787408 c:\users\thomas\documents\2017-2018\lancerderayons\code_a_completer\bases3d.hpp
+	<stdlib.h>
+	"liste.hpp"
+
+1520246849 c:\users\thomas\documents\2017-2018\lancerderayons\code_a_completer\liste.hpp
+
+1297843262 source:c:\users\thomas\documents\2017-2018\lancerderayons\code_a_completer\bitmap.cpp
+	<stdio.h>
+	<stdlib.h>
+	"bitmap.hpp"
+
+1297843218 c:\users\thomas\documents\2017-2018\lancerderayons\code_a_completer\bitmap.hpp
+	<stdlib.h>
+	"const.hpp"
+	"bases3d.hpp"
+	"couleurRVB.hpp"
+
+1297783980 c:\users\thomas\documents\2017-2018\lancerderayons\code_a_completer\const.hpp
+
+1297784464 c:\users\thomas\documents\2017-2018\lancerderayons\code_a_completer\couleurrvb.hpp
+
+1521636089 source:c:\users\thomas\documents\2017-2018\lancerderayons\code_a_completer\camera.cpp
+	"camera.hpp"
+	"bases3d.hpp"
+	"pixelmap.hpp"
+	"rayon.hpp"
+	"sphere.hpp"
+	<stdio.h>
+
+1297843868 c:\users\thomas\documents\2017-2018\lancerderayons\code_a_completer\camera.hpp
+	"const.hpp"
+	"bases3d.hpp"
+	"pixelmap.hpp"
+
+1297784558 c:\users\thomas\documents\2017-2018\lancerderayons\code_a_completer\pixelmap.hpp
+	"bases3d.hpp"
+	"bitmap.hpp"
+
+1297846484 c:\users\thomas\documents\2017-2018\lancerderayons\code_a_completer\rayon.hpp
+	"bases3d.hpp"
+	"intersection.hpp"
+	"liste.hpp"
+
+1297846484 c:\users\thomas\documents\2017-2018\lancerderayons\code_a_completer\intersection.hpp
+	"bases3d.hpp"
+
+1297846664 c:\users\thomas\documents\2017-2018\lancerderayons\code_a_completer\sphere.hpp
+	"const.hpp"
+	"bases3d.hpp"
+	"sphere.hpp"
+	"intersection.hpp"
+	"objet3D.hpp"
+
+1297846572 c:\users\thomas\documents\2017-2018\lancerderayons\code_a_completer\objet3d.hpp
+	"couleurRVB.hpp"
+	"rayon.hpp"
+	"intersection.hpp"
+
+1297784464 source:c:\users\thomas\documents\2017-2018\lancerderayons\code_a_completer\couleurrvb.cpp
+	"couleurRVB.hpp"
+
+1297846484 source:c:\users\thomas\documents\2017-2018\lancerderayons\code_a_completer\intersection.cpp
+	"intersection.hpp"
+	"const.hpp"
+
+1519827501 source:c:\users\thomas\documents\2017-2018\lancerderayons\code_a_completer\main.cpp
+	<iostream>
+	<stdio.h>
+	"bases3d.hpp"
+	"plan.hpp"
+	"sphere.hpp"
+	"camera.hpp"
+	"pixelmap.hpp"
+	"intersection.hpp"
+	"lumiere.h"
+	"rayon.hpp"
+	"objet3D.hpp"
+
+1297846484 c:\users\thomas\documents\2017-2018\lancerderayons\code_a_completer\plan.hpp
+	"const.hpp"
+	"bases3d.hpp"
+	"objet3D.hpp"
+	"intersection.hpp"
+	"rayon.hpp"
+
+1520245403 c:\users\thomas\documents\2017-2018\lancerderayons\code_a_completer\lumiere.h
+	"couleurRVB.hpp"
+	"rayon.hpp"
+	"intersection.hpp"
+
+1297784558 source:c:\users\thomas\documents\2017-2018\lancerderayons\code_a_completer\pixelmap.cpp
+	<math.h>
+	"pixelmap.hpp"
+	"bases3d.hpp"
+	"bitmap.hpp"
+
+1297846484 source:c:\users\thomas\documents\2017-2018\lancerderayons\code_a_completer\plan.cpp
+	<math.h>
+	"plan.hpp"
+	"bases3d.hpp"
+
+1521642522 source:c:\users\thomas\documents\2017-2018\lancerderayons\code_a_completer\rayon.cpp
+	"rayon.hpp"
+	"objet3D.hpp"
+	"lumiere.h"
+
+1520943070 source:c:\users\thomas\documents\2017-2018\lancerderayons\code_a_completer\sphere.cpp
+	<math.h>
+	"sphere.hpp"
+
+1521640307 source:c:\users\thomas\documents\2017-2018\lancerderayons\code_a_completer\lumiere.cpp
+	<math.h>
+	"lumiere.h"
+	"couleurRVB.hpp"
+	"objet3D.hpp"
+
