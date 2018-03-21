@@ -13,45 +13,46 @@ void Camera::Haut(const Vecteur3D & h) {
 }
 
 void Camera::Calculer_image(Pixelmap & pm, Liste<Objet3D> & lo, Liste<Lumiere> & ll, int complexite) const {
-	// centre de la camera
-	Point3D centre = this->Centre();
+	Point3D foyer; // Foyer optique de la camera
+	Vecteur3D droite; // Vecteur partant sur la droite dans le plan de l'ecran
+	float dx, dy; // dimension des macro-pixels
+	int x, y; // Position dans l'image du pixel en cours de calcul
+	Point3D hg; // Position du pixel au centre du premier macro-pixel de l'ecran (en haut a gauche)
+	Point3D pt; // Position de l'intersection entre le rayon a lancer et l'ecran
+	Rayon ray; // Rayon a lancer
+	Vecteur3D vect; // Vecteur directeur du rayon a lancer
+	int index; // Indice du pixel traite
 
-	// direction de la camera
-	Vecteur3D direction = this->Dir();
+	// On calcule la position du foyer de la camera
+	foyer = centre - (dir * dist);
 
-	//distance focale
-	float distance = this->Dist();
+	// On calcule le vecteur unitaire "droite" du plan
+	droite = dir.Cross(haut);
 
-	// le point d'où partent tout les rayons: centre - distance focale
-	Point3D origine = centre.operator-(direction.operator*(distance));
+	// On calcule le deltaX et le deltaY
+	dx = largeur / pm.Largeur();
+	dy = hauteur / pm.Hauteur();
 
-	RVB rvb;
-	
-	// definir les 2 vecteurs de la base de la cam
-	Vecteur3D x1 = this->Dir();
-	// produit vectoriel de x1 et x2 =0 et produit vectoriel de x1 et direction = 0
-	Vecteur3D x2 = this->Haut();
+	// On calcule la position du premier point de l'ecran que l'on calculera
+	hg = centre + (droite * ((dx / 2) - (largeur / 2))) + (haut * ((hauteur / 2) - (dy / 2)));
 
-	Vecteur3D x3 = x1.Cross(x2);
+	// Pour chaque pixel de l'image a calculer
+	index = 0;
+	for (y = 0; y < pm.Hauteur(); y++) {
+		for (x = 0; x < pm.Largeur(); x++) {
+			// On calcule la position dans l'espace de ce point
+			pt = hg + (droite * (dx * x)) - (haut * (dy * y));
 
-	// tous les pixels
-	// soit i l'axe des y
-	for (int i = -(pm.Hauteur()/2); i < pm.Hauteur()/2; i++) {
-		// soit j l'axe des x
-		for (int j = -(pm.Largeur()/2); j < pm.Largeur()/2; j++) {
-			Point3D pixel = centre.operator+(x2.operator*(i));
-			pixel = pixel.operator+(x3.operator*(j));
-			// le vecteur du rayon lancer
-			Vecteur3D vecteur = origine.operator+(pixel);
+			// On prepare le rayon qui part du foyer et qui passe par ce point
+			ray.Orig(pt);
+			vect = pt - foyer;
+			vect.Normaliser();
+			ray.Vect(vect);
+			ray.Milieu(1); /* Cette supposition n'est pas toujours vraie */
 
-			Rayon rayon;
-			rayon.Orig(origine);
-			rayon.Vect(vecteur);
-			rayon.Milieu();
-
-			rvb = rayon.Lancer(lo, ll, 5);
-
-			pm.Map(j + (pm.Largeur() / 2), i + (pm.Hauteur() / 2), rvb);
+			// Et on enregistre la couleur du rayon dans l'image
+			pm.Map(index++, ray.Lancer(lo, ll, complexite));
 		}
+		printf("Ligne %d traitee\n", y);
 	}
 }
